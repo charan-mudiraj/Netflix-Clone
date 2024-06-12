@@ -24,7 +24,11 @@ function App() {
     <>
       <div className={`overflow-x-hidden ${!currentTitle && "py-[20px]"}`}>
         <div>{currentTitle && <Banner title={currentTitle} />}</div>
-        <div className={`relative z-20 ${currentTitle && "top-[-110px]"}`}>
+        <div
+          className={`relative z-20 ${
+            currentTitle && "sm:top-[-110px] top-[-50px]"
+          }`}
+        >
           {titles.length > 0 && (
             <div className="flex flex-col gap-5">
               <TitlesRow header={"My List"} titles={titles.slice(0, 10)} />
