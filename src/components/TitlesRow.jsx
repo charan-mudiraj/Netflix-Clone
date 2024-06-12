@@ -22,10 +22,10 @@ function TitlesRow({ header, titles }) {
     <div>
       <p className="md:pl-[100px] pl-[50px] opacity-60 text-xl">{header}</p>
       <div
-        className="overflow-x-auto w-screen mt-2 md:pl-[70px] pl-[35px] pr-4 scrollbar-hidden"
+        className="overflow-x-auto w-screen max-w-max mt-2 md:pl-[70px] pl-[35px] pr-4 scrollbar-hidden relative"
         ref={scrollerRef}
       >
-        <div className="flex gap-2 w-max">
+        <div className="flex gap-3 w-max my-2">
           {titles.map((title, i) => (
             <MovieTitle key={i} title={title} />
           ))}
