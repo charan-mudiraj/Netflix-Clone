@@ -24,3 +24,21 @@ body {
   background-color: var(--secondary-color);
   border-radius: 6px;
 }
+.loader {
+  border: 4px solid var(--secondary-color);
+  border-left-color: transparent;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  animation: spin89345 1s linear infinite;
+}
+
+@keyframes spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

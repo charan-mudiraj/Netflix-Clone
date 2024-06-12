@@ -59,7 +59,7 @@ function Banner({ title }) {
               boxShadow: "inset 600px 0px 200px 0px var(--primary-color)",
             }}
           >
-            <div className="md:w-[45%] w-screen md:relative absolute xl:pt-[8%] px-[70px] flexflex-col gap-8 lg:text-base text-xs">
+            <div className="md:w-[45%] w-screen md:relative absolute xl:pt-[8%] px-[70px] flex flex-col gap-8 lg:text-base text-xs">
               <img src={title.logoImg} className="md:w-[80%] w-[40%]" />
               <div className="flex flex-col gap-5 opacity-60">
                 <div className="flex gap-3 text-sm">
