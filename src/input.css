@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root {
+  --primary-color: black;
+  --secondary-color: #e50914;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar:hover {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 6px;
+}
